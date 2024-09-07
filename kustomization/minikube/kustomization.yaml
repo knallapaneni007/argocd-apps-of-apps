@@ -4,4 +4,4 @@ kind: Kustomization
 namePrefix: kustomize-
 
 resources:
-- ../base/nginx
+- ../../base/nginx

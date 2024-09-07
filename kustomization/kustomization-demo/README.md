@@ -1,0 +1,1 @@
+## example: kustomization example with argocd cd

@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kustomization-deployments
+  namespace: argocd
+spec:
+  project: default  
+  source:
+    repoURL: https://github.com/knallapaneni007/argocd-apps-of-apps.git
+    path: apps-of-apps/minikube/helm/*
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc

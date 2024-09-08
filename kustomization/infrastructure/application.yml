@@ -4,11 +4,16 @@ metadata:
   name: kustomization-deployments
   namespace: argocd
 spec:
-  project: default  
-
+  project: default  
   source:
     repoURL: https://github.com/knallapaneni007/argocd-apps-of-apps.git
-    path: kustomization/infrastructure/minikube/*
+    path: kustomization/infrastructure/minikube
     targetRevision: main
+    kustomize: 
+      kustomizeBuildOptions: "--enable-helm"
   destination:
     server: https://kubernetes.default.svc
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

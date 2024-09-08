@@ -7,3 +7,4 @@ resources:
   - pgadmin.yaml
   - external-secrets.yaml
   - ingress-nginx.yaml
+  - nginx.yaml

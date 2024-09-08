@@ -10,7 +10,5 @@ spec:
     repoURL: https://github.com/knallapaneni007/argocd-apps-of-apps.git
     path: kustomization/infrastructure/minikube/*
     targetRevision: main
-    kustomize: 
-      kustomizeBuildOptions: "--enable-helm"
   destination:
     server: https://kubernetes.default.svc

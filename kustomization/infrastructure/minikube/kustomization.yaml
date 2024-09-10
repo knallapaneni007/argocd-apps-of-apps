@@ -3,3 +3,10 @@ kind: Kustomization
 resources:
   - ../base/namespaces
   - ../base/nginx
+
+helmCharts:
+- name: reloader
+  repo: https://stakater.github.io/stakater-charts
+  version: "1.0.69"
+  releaseName: reloader
+  namespace: reloader

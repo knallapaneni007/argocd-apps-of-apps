@@ -10,3 +10,4 @@ helmCharts:
   version: "1.0.69"
   releaseName: reloader
   namespace: reloader
+  valuesFile: ../base/reloader/values.yaml
